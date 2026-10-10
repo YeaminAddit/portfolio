@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yeamin Abrar Addit | Admissions Specialist, Cybersecurity Student, Musician</title>
+<meta name="description" content="Yeamin Abrar Addit: Admissions Specialist at Gwinnett Tech, Georgia State cybersecurity undergraduate, and guitarist and founding member of the Dhaka rock band Encore.">
+<meta property="og:title" content="Yeamin Abrar Addit">
+<meta property="og:description" content="Admissions Specialist at Gwinnett Tech. Cybersecurity student at Georgia State. Guitarist in Encore.">
+<meta property="og:image" content="me.jpg">
+<meta name="theme-color" content="#1a1a1a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#1a1a1a;
+  --secondary:#2d2d2d;
+  --accent:#2c5f7d;
+  --accent-soft:#e6eff4;
+  --light:#f5f5f5;
+  --text:#333;
+  --muted:#5f5f5f;
+  --border:#ddd;
+  --white:#fff
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font:400 16px/1.7 "Inter",system-ui,sans-serif;background:var(--white);color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;transition:color .3s ease}
+a:hover{color:var(--primary)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* Header */
+header{background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 5vw;max-width:1200px;margin:0 auto}
+.logo{font-family:"Playfair Display",serif;font-size:1.4rem;font-weight:700;color:var(--primary);letter-spacing:1px}
+nav ul{display:flex;list-style:none;gap:1.8rem;flex-wrap:wrap}
+nav a{font-size:.92rem;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--accent)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:4rem;align-items:center;padding:5rem 5vw 4rem;max-width:1300px;margin:0 auto}
+.eyebrow{font-size:.85rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(2.5rem,6vw,4.2rem);font-weight:700;color:var(--primary);line-height:1.1;margin-bottom:1.5rem}
+.hero p{font-size:1.12rem;color:var(--muted);max-width:46ch;line-height:1.8}
+.roles{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.roles span{font-size:.85rem;font-weight:500;color:var(--accent);background:var(--accent-soft);padding:.35rem .9rem;border-radius:20px}
+.cta-group{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.2rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 2rem;background:var(--accent);color:var(--white);font-weight:600;border-radius:4px;transition:background .3s,transform .2s;cursor:pointer;border:2px solid var(--accent)}
+.btn:hover{background:var(--primary);border-color:var(--primary);color:var(--white);transform:translateY(-1px)}
+.btn.secondary{background:transparent;color:var(--accent)}
+.btn.secondary:hover{background:var(--accent);border-color:var(--accent);color:var(--white)}
+.portrait{position:relative;width:100%;max-width:420px;margin:0 auto}
+.portrait::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--accent);border-radius:10px;z-index:0}
+.portrait img{position:relative;z-index:1;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 25%;border-radius:10px;display:block;background:var(--light);box-shadow:0 20px 40px rgba(0,0,0,.15)}
+
+/* Quick stats */
+.stats{background:var(--light);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.5rem;padding:2rem 5vw;text-align:center}
+.stats strong{display:block;font-family:"Playfair Display",serif;font-size:2rem;color:var(--accent);line-height:1.2}
+.stats span{font-size:.9rem;color:var(--muted)}
+
+/* Sections */
+section{padding:4.5rem 5vw}
+.container{max-width:1200px;margin:0 auto}
+section h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:700;color:var(--primary);margin-bottom:2.5rem;padding-bottom:1rem;border-bottom:2px solid var(--accent)}
+section p{color:var(--muted);margin-bottom:1.2rem;max-width:65ch}
+h3.sub{font-size:1.2rem;margin-top:2.2rem;margin-bottom:1rem;color:var(--primary)}
+
+/* Timeline */
+.timeline{display:grid;gap:1.4rem;margin-top:1rem}
+.timeline-item{padding:1.5rem 1.8rem;background:var(--light);border-left:4px solid var(--accent);border-radius:4px;transition:transform .2s,box-shadow .2s}
+.timeline-item:hover{transform:translateX(4px);box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.timeline-item .date{font-size:.8rem;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.6px;margin-bottom:.4rem}
+.timeline-item h3{font-size:1.15rem;color:var(--primary);margin-bottom:.15rem}
+.timeline-item .org{font-weight:600;color:var(--secondary);margin-bottom:.4rem;font-size:.97rem}
+.timeline-item p{font-size:.95rem;margin-bottom:0}
+.timeline-item .tag{display:inline-block;margin-left:.5rem;font-size:.7rem;letter-spacing:.5px;text-transform:uppercase;background:var(--accent);color:var(--white);padding:.1rem .55rem;border-radius:20px;vertical-align:middle}
+
+/* Skills */
+.skills{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1rem}
+.skill-tag{background:var(--accent);color:var(--white);padding:.4rem 1rem;border-radius:20px;font-size:.9rem;font-weight:500}
+.badge{display:inline-block;margin-top:2rem;padding:1rem 1.5rem;background:linear-gradient(135deg,var(--accent) 0%,#1a3a4d 100%);color:var(--white);border-radius:4px;font-weight:600}
+
+/* Honors */
+.honor{padding:2rem;background:var(--light);border-left:4px solid var(--accent);border-radius:4px}
+.honor h3{color:var(--primary);margin-bottom:.5rem}
+.honor .note{font-size:.9rem;margin-bottom:1.5rem}
+.row{display:flex;gap:1rem;flex-wrap:wrap}
+
+/* Band */
+.band-section{background:var(--primary);color:var(--white)}
+.band-section h2{color:var(--white);border-bottom-color:rgba(255,255,255,.2)}
+.band-section p{color:rgba(255,255,255,.8)}
+.band-intro{max-width:65ch;margin-bottom:3rem;font-size:1.05rem;line-height:1.8}
+.facts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2.5rem 0}
+.fact{text-align:center;padding:1.5rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:6px}
+.fact h3{font-size:1.8rem;color:#7fb5d1;margin-bottom:.5rem;font-family:"Playfair Display",serif}
+.fact p{color:rgba(255,255,255,.7);font-size:.95rem;margin:0 auto}
+.band-section h3.sub{color:var(--white);font-size:1.5rem;margin:3rem 0 1.5rem}
+.video-container{aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#000;margin:2rem 0 0;max-width:100%}
+.video-container iframe{width:100%;height:100%;border:none}
+.caption{font-size:.9rem;color:rgba(255,255,255,.6)!important;margin-top:.8rem;font-style:italic}
+.songs-list{list-style:none;max-width:600px;margin:1.5rem 0}
+.songs-list li{margin-bottom:.8rem}
+.songs-list a{display:flex;justify-content:space-between;align-items:center;padding:1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:4px;color:var(--white);transition:all .2s}
+.songs-list a:hover{background:rgba(255,255,255,.1);border-color:var(--accent)}
+.songs-list span{font-weight:600}
+.songs-list small{color:rgba(255,255,255,.6);font-size:.85rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin:2rem 0}
+.gallery-item{border-radius:6px;overflow:hidden;background:rgba(255,255,255,.05)}
+.gallery-item img{width:100%;height:auto;display:block}
+.band-section .btn.secondary{color:var(--white);border-color:rgba(255,255,255,.5)}
+.band-section .btn.secondary:hover{background:var(--white);color:var(--primary);border-color:var(--white)}
+
+/* Footer */
+footer{background:#111;color:var(--white);padding:3.5rem 5vw}
+footer .container{max-width:1200px;margin:0 auto}
+footer h2{font-family:"Playfair Display",serif;font-size:2rem;margin-bottom:1.2rem;border:none;padding:0;color:var(--white)}
+footer p{margin-bottom:1.5rem;color:rgba(255,255,255,.75);max-width:55ch}
+footer a{color:#7fb5d1}
+footer a:hover{color:var(--white)}
+footer .btn{color:var(--white)}
+footer .btn.secondary{color:var(--white);border-color:rgba(255,255,255,.4)}
+footer .btn.secondary:hover{background:var(--white);color:var(--primary)}
+.copyright{margin-top:2rem;font-size:.85rem;color:rgba(255,255,255,.5)!important}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr;gap:3rem;padding:3rem 5vw}
+  .portrait{max-width:320px;order:-1}
+  nav ul{gap:1rem;font-size:.9rem}
+  section{padding:3rem 5vw}
+  .cta-group{flex-direction:column}
+  .btn{width:100%}
+}
+@media(max-width:480px){
+  html{font-size:15px}
+  nav{flex-direction:column;gap:.8rem}
+  nav ul{justify-content:center}
+  .hero h1{font-size:2.2rem}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<header>
+  <nav aria-label="Main">
+    <div class="logo">YAA</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#honors">Honors</a></li>
+      <li><a href="#encore">Encore</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="about">
+  <div>
+    <p class="eyebrow">Atlanta Metropolitan Area</p>
+    <h1>Yeamin Abrar Addit</h1>
+    <p>Admissions Specialist at Gwinnett Technical College, cybersecurity student at Georgia State, and guitarist and founding member of Encore.</p>
+    <div class="roles">
+      <span>Higher Ed Systems</span>
+      <span>Web Dev &amp; IT Support</span>
+      <span>Brand Marketing</span>
+    </div>
+    <div class="cta-group">
+      <a href="#experience" class="btn">View Experience</a>
+      <a href="#encore" class="btn secondary">Explore Encore</a>
+    </div>
+  </div>
+  <div class="portrait">
+    <img src="me.jpg" alt="Portrait of Yeamin Abrar Addit, smiling in glasses and a dark blazer over a light blue shirt" width="1200" height="1200">
+  </div>
+</section>
+
+<div class="stats">
+  <div class="container">
+    <div><strong>4+ yrs</strong><span>Teaching &amp; training</span></div>
+    <div><strong>2 colleges</strong><span>Serving students, BMCC &amp; Gwinnett Tech</span></div>
+    <div><strong>GSU '27</strong><span>Cybersecurity undergrad</span></div>
+    <div><strong>2013</strong><span>Founding member of Encore</span></div>
+  </div>
+</div>
+
+<section id="about-detail">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I help students get into college. At Gwinnett Technical College I work in admissions, using the same systems that run higher education behind the scenes. Before that I spent nearly two years in the Enrollment Services call center at BMCC, answering students' questions every day. Outside work I'm studying cybersecurity at Georgia State, I build websites and give IT support, and I've spent years teaching and playing music, as guitarist and a founding member of the rock band Encore.</p>
+
+    <h3 class="sub">Core Competencies</h3>
+    <div class="skills">
+      <span class="skill-tag">Banner</span>
+      <span class="skill-tag">TargetX</span>
+      <span class="skill-tag">Axiom</span>
+      <span class="skill-tag">Web Development</span>
+      <span class="skill-tag">IT Support</span>
+      <span class="skill-tag">Brand Marketing</span>
+      <span class="skill-tag">Creative Strategy</span>
+      <span class="skill-tag">Public Speaking</span>
+      <span class="skill-tag">Laboratory Skills</span>
+      <span class="skill-tag">Testing</span>
+    </div>
+    <div class="badge">Dean's List, Summer 2026</div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">February 2026 – Present</div>
+        <h3>Specialist, Admissions <span class="tag">Current</span></h3>
+        <div class="org">Gwinnett Technical College</div>
+        <p>Supporting prospective students through the admissions process.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">March 2023 – January 2025 | New York</div>
+        <h3>Call Center Representative</h3>
+        <div class="org">Borough of Manhattan Community College</div>
+        <p>Contact center agent at BMCC Enrollment Services, helping students and applicants with their enrollment questions.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">June – August 2023 | New York</div>
+        <h3>Intern</h3>
+        <div class="org">Google Arts &amp; Culture</div>
+        <p>CUNY Career Launch internship.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">November 2020 – November 2021 | Bangladesh</div>
+        <h3>Head of Academic Affairs &amp; Senior IELTS Trainer</h3>
+        <div class="org">Edex Learning Academy</div>
+        <p>Led academics and trained students for the IELTS exam.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">October 2019 – December 2020 | Dhaka</div>
+        <h3>GED Instructor</h3>
+        <div class="org">Mentors'</div>
+        <p>Taught students preparing for the GED.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">January 2017 – December 2019 | Dhaka</div>
+        <h3>Music Instructor</h3>
+        <div class="org">YA Music Academy</div>
+        <p>Ran the after-school music class for students of Academia on Campus.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">2017 – 2018 | Dhaka</div>
+        <h3>Tutor</h3>
+        <div class="org">Academia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" style="background:var(--light)">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item" style="background:var(--white)">
+        <div class="date">February 2026 – May 2027 (Expected)</div>
+        <h3>Georgia State University</h3>
+        <div class="org">Bachelor's, Computer and Information Systems Security / Information Assurance</div>
+      </div>
+      <div class="timeline-item" style="background:var(--white)">
+        <div class="date">August 2023 – January 2025</div>
+        <h3>Borough of Manhattan Community College</h3>
+        <div class="org">Associate's Degree, Computer Information Systems</div>
+      </div>
+      <div class="timeline-item" style="background:var(--white)">
+        <div class="date">2015 – 2016</div>
+        <h3>Mentors'</h3>
+        <div class="org">GED</div>
+      </div>
+      <div class="timeline-item" style="background:var(--white)">
+        <div class="date">2000 – 2014</div>
+        <h3>Academia</h3>
+        <div class="org">O-Levels</div>
+      </div>
+    </div>
+
+    <h3 class="sub">Certifications</h3>
+    <div class="skills">
+      <span class="skill-tag">GA@WORK Employee Self-Service</span>
+      <span class="skill-tag">GA@WORK Basic Navigation Training</span>
+      <span class="skill-tag">GA@WORK Manage My Learning</span>
+    </div>
+  </div>
+</section>
+
+<section id="honors">
+  <div class="container">
+    <h2>Verified Honors</h2>
+    <div class="honor">
+      <h3>Dean's List, Summer 2026</h3>
+      <p>Named to the Dean's List at Georgia State University.</p>
+      <p class="note">Verified by Georgia State University, September 11, 2026</p>
+      <div class="row">
+        <a href="https://gsu.meritpages.com/stories/Yeamin-Addit-Named-to-the-Summer-2026-Dean-s-List/198836700" target="_blank" rel="noopener" class="btn">Read Story</a>
+        <a href="https://meritpages.com/yeaminaddit" target="_blank" rel="noopener" class="btn secondary">Merit Page</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-section" id="encore">
+  <div class="container">
+    <h2>Encore</h2>
+    <p class="band-intro">I'm the guitarist and a founding member of Encore, a rock band from Dhaka formed by a group of friends in 2013. The band earned praise for its first album, <em>Chinho</em>, and went on to release the single <em>Grishsho</em> from its second album.</p>
+
+    <div class="facts-grid">
+      <div class="fact">
+        <h3>2013</h3>
+        <p>Formed by friends in Dhaka. I'm a founding member.</p>
+      </div>
+      <div class="fact">
+        <h3>Chinho</h3>
+        <p>Debut album, well received by listeners.</p>
+      </div>
+      <div class="fact">
+        <h3>Grishsho</h3>
+        <p>Second-album single, released January 2020 on YouTube and Gaan App.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">Featured Performance</h3>
+    <div class="video-container">
+      <iframe src="https://www.youtube-nocookie.com/embed/FfSwsLc4fHY" title="Encore, Chinho album (G Series)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="caption">Chinho — Debut Album (G Series)</p>
+
+    <h3 class="sub">Most-Watched Songs</h3>
+    <ul class="songs-list">
+      <li><a href="https://www.youtube.com/results?search_query=Encore+Srotoshinni+official+audio" target="_blank" rel="noopener"><span>Srotoshinni</span><small>Chinho</small></a></li>
+      <li><a href="https://www.youtube.com/results?search_query=Encore+Na+Pawar+Golpo" target="_blank" rel="noopener"><span>Na Pawar Golpo</span><small>The first song</small></a></li>
+      <li><a href="https://www.youtube.com/results?search_query=Encore+Cyanide+official+audio" target="_blank" rel="noopener"><span>Cyanide</span><small>Chinho</small></a></li>
+      <li><a href="https://www.youtube.com/results?search_query=Encore+Niye+Jao" target="_blank" rel="noopener"><span>Niye Jao</span><small>Single, 2022</small></a></li>
+      <li><a href="https://www.youtube.com/results?search_query=Encore+Grishsho" target="_blank" rel="noopener"><span>Grishsho</span><small>Second-album single</small></a></li>
+    </ul>
+
+    <h3 class="sub">Gallery</h3>
+    <div class="gallery">
+      <div class="gallery-item"><img src="band1.jpg" alt="Encore performing live on stage" loading="lazy"></div>
+      <div class="gallery-item"><img src="band2.jpg" alt="Encore band members together" loading="lazy"></div>
+      <div class="gallery-item"><img src="band3.jpg" alt="Encore band photo" loading="lazy"></div>
+    </div>
+
+    <div class="row" style="margin-top:3rem">
+      <a href="https://www.youtube.com/@ENCOREtheband" target="_blank" rel="noopener" class="btn">Visit YouTube</a>
+      <a href="https://www.facebook.com/encore.theband/" target="_blank" rel="noopener" class="btn secondary">Follow on Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <p>Questions about admissions, a web project, or music? Reach out.</p>
+    <div class="row">
+      <a href="mailto:yeaminabrar@gmail.com" class="btn">Email Me</a>
+      <a href="https://www.linkedin.com/in/yeamin-addit-64a128262/" target="_blank" rel="noopener" class="btn secondary">LinkedIn</a>
+      <a href="https://www.instagram.com/yeaminabrar/" target="_blank" rel="noopener" class="btn secondary">Instagram</a>
+    </div>
+    <p class="copyright">© 2026 Yeamin Abrar Addit. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
